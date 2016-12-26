@@ -7,13 +7,13 @@
 
 import sys
 
-def fib_norm(n):
-    if n <= 0:
+def fib_norm(number):
+    if number <= 0:
         return 0
-    elif n == 1:
+    elif number == 1:
         return 1
     else:
-        return fib_norm(n-1) + fib_norm(n-2)
+        return fib_norm(number-1) + fib_norm(number-2)
 
 def main(argv=sys.argv):
     fib = fib_norm(int(argv[1]))
